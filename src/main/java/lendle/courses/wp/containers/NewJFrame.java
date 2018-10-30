@@ -5,23 +5,17 @@
  */
 package lendle.courses.wp.containers;
 
-import java.awt.Frame;
-import javax.swing.WindowConstants;
-
 /**
  *
- * @author lendle
+ * @author user
  */
-public class CloseOperationSample extends javax.swing.JFrame {
+public class NewJFrame extends javax.swing.JFrame {
 
     /**
-     * Creates new form CloseOperationSample
+     * Creates new form NewJFrame
      */
-    public CloseOperationSample() {
+    public NewJFrame() {
         initComponents();
-        //modify the parameter below to EXIT_ON_CLOSE
-        this.setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-        /////////////////////////////////////////////
     }
 
     /**
@@ -33,11 +27,13 @@ public class CloseOperationSample extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        newJPanel1 = new lendle.courses.wp.containers.NewJPanel();
         jButton1 = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jButton1.setText("Open Dialog");
+        jButton1.setText("K");
+        jButton1.setActionCommand("K");
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
@@ -48,17 +44,23 @@ public class CloseOperationSample extends javax.swing.JFrame {
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(newJPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(79, 79, 79))
             .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
+                .addGap(187, 187, 187)
                 .addComponent(jButton1)
-                .addContainerGap(267, Short.MAX_VALUE))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(70, 70, 70)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(newJPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(207, 207, 207)
                 .addComponent(jButton1)
-                .addContainerGap(205, Short.MAX_VALUE))
+                .addGap(40, 40, 40))
         );
 
         pack();
@@ -66,7 +68,6 @@ public class CloseOperationSample extends javax.swing.JFrame {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         // TODO add your handling code here:
-        new NewJDialog((Frame)null).setVisible(true);
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
@@ -86,25 +87,26 @@ public class CloseOperationSample extends javax.swing.JFrame {
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(CloseOperationSample.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(NewJFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(CloseOperationSample.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(NewJFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(CloseOperationSample.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(NewJFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(CloseOperationSample.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(NewJFrame.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new CloseOperationSample().setVisible(true);
+                new NewJFrame().setVisible(true);
             }
         });
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
+    private lendle.courses.wp.containers.NewJPanel newJPanel1;
     // End of variables declaration//GEN-END:variables
 }
